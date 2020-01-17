@@ -1,3 +1,4 @@
+@WONG
 Feature: Add a product to the shopping cart.
   A user can select a producer and add it to the shopping cart.
 
