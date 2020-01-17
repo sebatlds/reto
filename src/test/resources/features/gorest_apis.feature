@@ -1,5 +1,6 @@
-Feature: Register user through api.
-  A user can Register using api.
+@GOREST
+Feature: Register user through api
+  A user can Register using api
 
   @GorestApi @TestCase1
   Scenario Outline: Registration of a user by consuming an api.
