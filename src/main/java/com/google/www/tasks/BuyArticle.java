@@ -18,14 +18,12 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
  *
  */
 public class BuyArticle implements Task {
-    RandomValue randomValue = new RandomValue();
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 ClickJS.clickJSTargetElement(CLOSE_BUTTON),
-                Check.whether(Visibility.of(CLOSE_BUTTON).viewedBy(actor).asBoolean())
-                .andIfSo(
+                Check.whether(Visibility.of(CLOSE_BUTTON).viewedBy(actor).asBoolean()).andIfSo(
                         Click.on(CLOSE_BUTTON)
                 ),
                 ScrollUp.toThePage(),

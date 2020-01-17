@@ -1,9 +1,9 @@
-Feature: basic registration Nominapp SVPyme
-  A user can register his company in nominapp by SVPyme
+Feature: Add a product to the shopping cart.
+  A user can select a producer and add it to the shopping cart.
 
-  @BasicRegistrationNominapp @TestCase1
-  Scenario: Basic register TC1, Successful case
-  Narrative: Register a company in nominapp
+  @WongTest @TestCase1
+  Scenario: Add a product to the shopping cart in wong.
+  Narrative:Add product.
 
     Given I select the article
     When Add to shopping cart

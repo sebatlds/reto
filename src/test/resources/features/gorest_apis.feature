@@ -1,9 +1,9 @@
-Feature: basic registration Nominapp SVPyme
-  A user can register his company in nominapp by SVPyme
+Feature: Register user through api.
+  A user can Register using api.
 
   @GorestApi @TestCase1
-  Scenario Outline: Basic register TC1, Successful case
-  Narrative: Register a company in nominapp
+  Scenario Outline: Registration of a user by consuming an api.
+  Narrative: Register user.
 
     Given I create a user with the post method
     | first_name | <first_name>|

@@ -17,8 +17,6 @@ public class Wongpage extends PageObject{
             Target.the("Button to add to the shopping cart.").located(By.xpath("//*[@class='product-item__add-to-cart product-add-to-cart btn red add-to-cart']"));
     public static final Target NAME_PRUDUCT=
             Target.the("Label indicating the name of the product.").located(By.xpath("//*[@class='product-item__bottom']/div/a"));
-    public static final Target VALUE_PRUDUCT=
-            Target.the( "Label that indicates the value of the product.").located(By.xpath("//*[@class='product-prices__value product-prices__value--best-price']"));
     public static final Target CLOSE_ALERT=
             Target.the("Button to close the main alert.").located(By.id("onesignal-popover-cancel-button"));
     public static final Target BUTTON_MINICARD=
@@ -29,9 +27,6 @@ public class Wongpage extends PageObject{
             Target.the("Button to close the modal, when a product is added to the shopping cart.").located(By.xpath("//*[@class=\"modal-address__close font-icn cross\"]"));
     public static final Target NAME_PRODUCT_TO_CART=
             Target.the("Product name in the shopping cart.").located(By.xpath("//*[@class='product-item__name']"));
-    public static final Target VALUE_PRODUCT_TO_CART=
-            Target.the("Value of the product in the shopping cart.").located(By.xpath("//*[@class='product-prices__value']"));
-
 
     public static Target getArticleCategory(String article){
         return Target.the("List of article types").located(By.xpath("//*[contains(text(),'"+article+"')]"));

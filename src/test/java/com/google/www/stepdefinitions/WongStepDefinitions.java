@@ -20,6 +20,7 @@ public class WongStepDefinitions {
     @Managed(driver = "chrome")
     private WebDriver herBrowser;
 
+
     private Actor wongUser = Actor.named("wongUser");
     Wongpage wongpage = new Wongpage();
 

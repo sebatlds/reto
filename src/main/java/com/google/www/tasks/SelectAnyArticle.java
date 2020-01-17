@@ -5,8 +5,6 @@ import com.google.www.util.RandomValue;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.Click;
-
 import java.util.List;
 import static com.google.www.userinterfaces.Wongpage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;

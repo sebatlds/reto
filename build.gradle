@@ -1,35 +1,45 @@
-plugins {
-    id 'java'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    mavenLocal()
 }
+
+buildscript{
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.1")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
 
 group 'com.google.www.retosophos'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
-repositories {
-    mavenCentral()
-}
-
-ext {
-    serenityVersion = '2.0.30'
-    serenityCucumberVersion = '1.9.4'
-    jacksonVersion = '2.10.0'
-}
-
-
 dependencies {
-    testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
-    testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
-    compile "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
-    compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
-    compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
-    compile "com.fasterxml.jackson.core:jackson-annotations:$rootProject.ext.jacksonVersion"
+    testImplementation "net.serenity-bdd:serenity-core:2.0.1"
+    testImplementation "net.serenity-bdd:serenity-junit:2.0.1"
+    compile "net.serenity-bdd:serenity-screenplay:1.9.9"
+    compile "net.serenity-bdd:serenity-screenplay-webdriver:1.9.9"
+    compile "net.serenity-bdd:serenity-cucumber:1.9.14"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.0'st
     testCompile 'junit:junit:4.12'
     testCompile 'org.assertj:assertj-core:3.9.1'
     testCompile 'org.slf4j:slf4j-simple:1.7.7'
 
 }
+
+
 test {
     systemProperty "webdriver.driver", System.properties.getProperty("webdriver.driver")
 }
+
+test.finalizedBy(aggregate)

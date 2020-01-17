@@ -26,9 +26,7 @@ public class GetText implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         List<WebElementFacade> name = NAME_PRUDUCT.resolveAllFor(actor);
-        List<WebElementFacade> value = VALUE_PRUDUCT.resolveAllFor(actor);
         product.setName(name.get(index).getText());
-        product.setValue(value.get(index).getText());
         Serenity.setSessionVariable("productModel").to(product);
     }
 
