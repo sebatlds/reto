@@ -30,7 +30,7 @@ dependencies {
     compile "net.serenity-bdd:serenity-screenplay:1.9.9"
     compile "net.serenity-bdd:serenity-screenplay-webdriver:1.9.9"
     compile "net.serenity-bdd:serenity-cucumber:1.9.14"
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.0'st
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.0'
     testCompile 'junit:junit:4.12'
     testCompile 'org.assertj:assertj-core:3.9.1'
     testCompile 'org.slf4j:slf4j-simple:1.7.7'
