@@ -1,5 +1,13 @@
 package com.google.www.util;
 
+import com.google.www.exceptions.MyBusinessException;
+import static com.google.www.exceptions.ExceptionsMessages.EXCEPTION_ERROR_PRODUCT_TYPE_NOT_EXIST;
+
+/**
+ *
+ * Clase que retorna el tipo de producto a seleccionar.
+ *
+ */
 public class ChooseItemType {
 
     public String getArticle(int value){
@@ -24,13 +32,10 @@ public class ChooseItemType {
                 article = "Televisores";
                 break;
             case 6:
-                article = "Electrohogar";
-                break;
-            case 7:
                 article = "Hogar y Bazar";
                 break;
             default:
-                //exception
+                throw new MyBusinessException(EXCEPTION_ERROR_PRODUCT_TYPE_NOT_EXIST.getMessage());
         }
         return article;
     }

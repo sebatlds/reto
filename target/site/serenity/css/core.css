@@ -1008,7 +1008,7 @@ a.tagLink:visited, a.tagLink:link {
 
 .step-table
 {
-    width:95%;
+    width:1025px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -1919,7 +1919,6 @@ h3 {
 .scenario-text {
     padding-left: 1.5em;
     margin-bottom: 1em;
-    font-style: italic;
 }
 
 div.scenario-text:empty {
@@ -1999,8 +1998,8 @@ div.scenario-text:empty {
 .scenario-docs table {
     margin-left: 3em;
     margin-top: 0.5em;
+    border: 0.5px solid grey;
 }
-
 .scenario-docs th {
     font-weight: bold;
     color: grey;
@@ -2012,11 +2011,6 @@ div.scenario-text:empty {
     padding: 4px;
     border: 0.5px solid grey;
 }
-
-.scenario-docs .dataTable {
-    border-bottom-color: white;
-}
-
 .examples {
     padding-top: 0.5em;
 }
@@ -2045,7 +2039,6 @@ div.scenario-text:empty {
 }
 
 .toc-title {
-    width: 90%;
 }
 
 .top-list-title {
@@ -2079,7 +2072,6 @@ div.scenario-text:empty {
     margin-top: 4px !important;
     margin-bottom: 4px !important;
     font-size: 1em;
-    background-color: rgba(238,0,0,0.3);
 }
 
 .missing-scenario-warning {
@@ -2089,159 +2081,4 @@ div.scenario-text:empty {
 div.progress {
     height:20px;
     margin:0px !important;
-}
-
-.feature-count {
-    font-weight: normal;
-    color: dimgrey;
-}
-
-.requirements-overview img {width: 100%;}
-
-td.indented-error-category i {
-    margin-left: 20px;
-}
-
-.report-info {
-    font-style: italic;
-    font-size: 0.9em;
-    padding-top: 0.5em;
-    padding-left: 1em;
-}
-
-.example-table {
-     overflow-x:auto;
- }
-
-.example-table table {
-    min-width: 80%;
-    max-width: 80%;
-}
-.example-table table th {
-    padding: 4px;
-}
-
-.example-table table td {
-    padding: 4px;
-}
-
-.example-table th {
-    border: 0.5px solid darkgrey;
-    color: grey;
-    background-color: beige;
-}
-
-.example-table td {
-    border: 0.5px solid darkgrey;
-    color: grey;
-}
-
-
-.test-report table {
-    border: 0.75px solid dimgrey;
-    min-width: 98%;
-}
-.test-report th {
-    font-weight: bold;
-    background-color: white;
-}
-
-.test-report th:first-child {
-    width: 1em;
-}
-
-.test-report td.test-SUCCESS {
-    background-color: white;
-}
-
-
-
-
-.example-table-in-scenario {
-    overflow-x:auto;
-    padding-bottom: 1.5em;
-}
-
-.example-table-in-scenario table {
-    min-width: 80%;
-    max-width: 80%;
-}
-.example-table-in-scenario table th {
-    padding: 4px;
-}
-
-.example-table-in-scenario table td {
-    padding: 4px;
-}
-
-.example-table-in-scenario th {
-    border: 0.5px solid darkgrey;
-    color: grey;
-}
-
-.example-table-in-scenario td {
-    border: 0.5px solid darkgrey;
-    color: grey;
-}
-
-
-
-.example-table-in-summary th:last-child {
-    width: 0.5em;
-}
-
-.example-table-in-summary th:last-child {
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    padding-left: 1em;
-
-}
-
-.example-table-in-summary {
-    padding-bottom: 0px;
-}
-
-.example-table-in-scenario th:last-child {
-    width: 0.5em;
-    /*border-right: solid white 1px;*/
-    /*border-top: solid white 1px;*/
-    /*border-bottom: solid white 1px;*/
-}
-
-.example-table-in-scenario td:last-child {
-    padding-left: 0.5em;
-    width: 1em;
-    /*border-right: solid white 1px;*/
-    /*border-top: solid white 1px;*/
-    /*border-bottom: solid white 1px;*/
-}
-
-.scenario-description {
-    padding-left: 1em;
-}
-
-.scenario-docs .card-body table {
-    margin-left: 3em;
-    width: 95%;
-    max-width: 95%;
-}
-
-.context-icon {
-   padding-right: 1em;
-}
-
-.more-details-result-compromised { background-color: fuchsia; !important; }
-.more-details-result-error { background-color: darkorange; !important;  }
-.more-details-result-failure { background-color: #f8001f; !important; }
-.more-details-result-skipped { background-color: #B2A671;  !important; }
-.more-details-result-ignored { background-color: #777777;  !important; }
-.more-details-result-pending { background-color: #6884A6; !important;  }
-.more-details-result-success { background-color: #1D9918; !important;  }
-
-.scenario-report-badges {
-    min-height:1.5em;
-}
-.scenario-report-badge {
-    float:right;
 }
