@@ -14,6 +14,7 @@ repositories {
 ext {
     serenityVersion = '2.0.30'
     serenityCucumberVersion = '1.9.4'
+    jacksonVersion = '2.10.0'
 }
 
 
@@ -23,6 +24,7 @@ dependencies {
     compile "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    compile "com.fasterxml.jackson.core:jackson-annotations:$rootProject.ext.jacksonVersion"
     testCompile 'junit:junit:4.12'
     testCompile 'org.assertj:assertj-core:3.9.1'
     testCompile 'org.slf4j:slf4j-simple:1.7.7'

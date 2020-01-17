@@ -1,6 +1,5 @@
 package com.google.www.interactions;
 
-import com.google.www.tasks.BuyArticle;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
@@ -8,6 +7,11 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ *
+ * Interaction para realizar un scroll hacia arriba.
+ *
+ */
 public class ScrollUp implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {

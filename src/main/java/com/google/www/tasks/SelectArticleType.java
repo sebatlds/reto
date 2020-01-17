@@ -9,6 +9,11 @@ import net.serenitybdd.screenplay.actions.Click;
 import static com.google.www.userinterfaces.Wongpage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+/**
+ *
+ * Tarea para seleccionar el tipo de producto.
+ *
+ */
 public class SelectArticleType implements Task {
     ChooseItemType chooseItemType = new ChooseItemType();
     RandomValue randomValue = new RandomValue();
@@ -16,7 +21,7 @@ public class SelectArticleType implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(CLOSE_ALERT),
-                Click.on(Wongpage.getArticleCategory(chooseItemType.getArticle(randomValue.getRandomValue(8))))
+                Click.on(Wongpage.getArticleCategory(chooseItemType.getArticle(randomValue.getRandomValue(7))))
         );
     }
 
